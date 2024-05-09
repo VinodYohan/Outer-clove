@@ -1,0 +1,66 @@
+/* Add your styles here */
+body {
+    background: 
+    url("menu/wallhaven-zmzggj.jpg") no-repeat center center fixed, /* First background image */
+    url("background/wallhaven-13rq19.jpg") no-repeat center center fixed; /* Second background image */
+    background-size: cover;
+    font-family: Goudy Old Style, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-size: large;
+    color: gold;
+    background-color:black;
+}
+
+.confirmation {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:black;
+    padding: 30px;
+    color: darkgoldenrod;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color:gold;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkgoldenrod;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: darkgoldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from anchor */
+}
+
+button:hover {
+    background-color:gold;
+}
+
+a {
+    text-decoration: none;
+}

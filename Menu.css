@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Goudy Old Style, sans-serif;
+}
+body {
+  min-height: 100vh;
+background-color:black;
+  background-size: cover;
+  background-position: center;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  color: wheat;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 100;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(59, 59, 59),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.logo {
+  color: gold;
+  font-style: unset;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+.navbar a {
+  color: white;
+  font-style:  Goudy Old Style; 
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: rgb(255, 151, 39);
+}
+#menu-icon {
+  font-size: 36px;
+  color: black;
+  display: none;
+}
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+  }
+  .nav-bg {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    display: none;
+  }
+  .nav-bg.active {
+    display: block;
+  }
+}
+
+
+
+/* Menu Section specific styles */
+.menu-section {
+    background-color:black;
+    color: gold;
+  }
+  
+  .menu-section h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background:b;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: gold;
+    box-shadow:darkgoldenrod;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  
+  
+  .menu-section h2:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-section p {
+    color: gold;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .menu-tiles {
+    display: grid;
+    color: gold;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+    justify-content: space-around;
+  }
+  
+  .menu-item {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: gold;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .menu-item-caption {
+    padding: 15px;
+  }
+  
+  .menu-item-caption p {
+    margin: 0;
+    font-size: 1.1em;
+    color: gold;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Animation for the section */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .menu-tiles {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  
+  
+  
+  /* Common styles for sections */
+  .section {
+    text-align: center;
+    padding: 100px 4%;
+    position: relative;
+  }
+  
+  .section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .section .section-content {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+
+.order-onw {
+    /* Add styles for the container if needed */
+}
+
+.order-button {
+    background-color: darkgoldenrod; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.order-button:hover {
+    background-color: gold; /* Darker green on hover */
+}

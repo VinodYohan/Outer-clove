@@ -1,0 +1,35 @@
+/* admin_edit_reservation.css */
+
+body {
+    font-family: Goudy Old Style, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgoldenrod;
+}

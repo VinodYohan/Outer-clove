@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+
+*,*::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+   background: 
+    url("04.jpg") no-repeat center center fixed, 
+    url("background/wallhaven-13rq19.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Goudy Old Style', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+
+::selection{
+    background-color:gold;
+}
+
+.logo{
+    width: 100px;
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    background-color: black;
+    font-family:Goudy Old Style ;
+    left: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+header nav{
+ 
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 310px; 
+}
+
+header ul a {
+    text-decoration: none;
+    color:white;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.search a{
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+
+.hambeger{
+    padding-left: 1.5rem;
+
+}
+
+.hambeger a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color:gold;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*.hambeger .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}*/
+
+.hambeger.bar::before,
+.hambeger.bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hambeger.bar::before{
+    top: -4.5px;
+}
+
+.hambeger.bar::after{
+    top: 4.5px;
+
+}
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: gold;
+    cursor: pointer;
+    padding: 8px;
+}
+
+
+.search {
+    margin-top: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color:gold;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/*ul{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 5px;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+}*/
+
+/*ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 18px;
+}*/
+
+ul li a:hover{
+    background: #fff;
+    color: #333;
+
+}
+
+
+footer {
+    background-color:black;
+    color:gold;
+    padding: 40px 0;
+    font-family: Goudy Old Style;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    color: gold;
+    font-family:Goudy Old Style;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: darkgoldenrod;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color:darkgoldenrod;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+
+main {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color:black;
+    border-radius: 8px;
+    color: gold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    font-family:Goudy Old Style;
+    margin-bottom: 15px;
+    color: darkgoldenrod;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Your_Beautiful_Font', sans-serif; 
+}
+
+
+.custom-list li strong {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color:darkgoldenrod; 
+    margin-bottom: 5px; 
+}
+
+
+.custom-list li {
+    text-align: justify;
+}
+
+
+

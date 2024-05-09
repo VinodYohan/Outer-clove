@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+    <header>
+        <h1> Join Outer Clover Hotel's Exclusive Club! </h1>
+        <p>Unlock a world of opulent stays, tailored recommendations, VIP access, and more!</p>
+        <button type="submit">Sign Up Now</button>
+    </header>
+
+    <div class="content">
+        <form id="signup-form" action="asignup.php" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="addres" required>
+
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+
+            <label for="username">UserName:</label>
+            <input type="username" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="pass" required>
+
+            
+
+            <div class="buttons">
+                <button type="submit">Signup</button>
+                <button type="button" onclick="clearFields()">Cancel</button>
+            </div> <br> <br> <br>
+        </form>
+    </div>
+
+    <footer>
+
+        <div class="wrap">
+            <div class="cat">
+              <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye two"></div>
+              </div>
+              <div class="mouth">
+                <div class="lezu"></div>
+              </div>
+            </div>
+            <div class="shadow"></div>
+            </div>
+
+                <div class="footer-content">
+                    <p> Stay Connected!<br>
+                        Subscribe for Exclusive Deals & Updates<br>
+                        Follow Us for More:<br>
+                        &nbsp;&nbsp; <a href="https://www.facebook.com/OuterCloverHotel" target="_blank">FB</a> /OuterCloverHotel<br>
+                        &nbsp;&nbsp; <a href="https://www.instagram.com/OuterCloverHotel" target="_blank">IG</a> @OuterCloverHotel<br>
+                         Need Assistance? Contact Us:<br>
+                        &nbsp;&nbsp; <a href="mailto:contact@outercloverhotel.com">contact@outercloverhotel.com</a><br>
+                        &nbsp;&nbsp; <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                    </p>
+                    <p>© 2023 <a href="https://www.outercloverhotel.com" target="_blank">Outer Clover Hotel</a>. All Rights Reserved.</p>
+                </div>
+    </footer>
+
+    
+</body>
+</html>

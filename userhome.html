@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Outer Clover Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="userhome.css">
+</head>
+<body>
+
+  <header>
+     
+    <nav>
+        <img src="logo.png" alt="Travelo" class="logo">
+        <ul>
+
+            <li>
+                <a href="userhome.html">Home</a>
+            </li>
+            <li>
+                <a href="userhistory.html">About</a>
+            </li>
+            <li>
+                <a href="userrasavation.html">Room Reservation</a>
+            </li>
+            <li>
+                <a href="userdining.html">Dining Appointment</a>
+            </li>
+            <li>
+                <a href="oder.html">Food Order</a>
+            </li>
+            <li>
+                <a href="Menu.html">Menu</a>
+            </li>
+            <div class="search">
+                <form class="search-form">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <li class="hambeger">
+                <a href="logout.php">
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="bar"></div>
+                    <span id="loggedInUserName" style="display: none;"></span>
+                </a>
+            </li>
+            
+            <li class="hambeger">
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                 <div class="bar"></div>
+                </a>
+             <li class="hambeger">
+                    <a href="#">
+                        <i class="fa-solid fa-gears"></i>
+                     <div class="bar"></div>
+                </a>
+                
+            </li>
+        </ul>
+    </nav>
+
+  </header> 
+
+
+  
+  <main>
+    <div class="vignette"></div>
+    <img src="01.jpg" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0"  data-distance="-200" class="parallax bg-img">
+    <div data-speedx="0.7" data-speedy="0.5"class="text data-speedz="0" parallax">
+        <h2>Welcome</h2>
+        <h2>The Outer Clover</h2>
+        <h1>Restaurant</h1>
+    </div>
+
+  </main>
+  
+
+  <footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/YourFacebookPage" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/YourYouTubeChannel" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/YourInstagramProfile" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+        <!-- Add more social icons with appropriate URLs -->
+    </div>
+    <div class="footer-content">
+        <p>🍴 Exquisite Flavors, Memorable Moments: Welcome to The Outer Clover Restaurant &#128511; | Operating since 2000 | Contact: <a href="tel:+1 (555) 123-4567">[Phone]</a> or <a href="mailto:contact@outercloverhotel.com">Email</a> &#x1F4DE &#9993 </p>
+    </div>
+
+</footer>
+
+
+<script>
+    // Function to show the alert after a delay
+    function showAlert() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorMessage = urlParams.get('error_message');
+
+        if (errorMessage) {
+            // Display the error message as an alert after a delay of 500 milliseconds (adjust as needed)
+            setTimeout(function() {
+                alert(errorMessage);
+            }, 500);
+        } else {
+            // If no error, show a success message after a delay of 500 milliseconds (adjust as needed)
+            setTimeout(function() {
+                alert('Login successful!');
+            }, 500);
+        }
+    }
+
+    // Call the function when the page finishes loading
+    window.onload = showAlert;
+</script>
+
+<script>
+    // Function to show the alert after a delay
+    function showAlert() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorMessage = urlParams.get('error_message');
+
+        if (errorMessage) {
+            // Display the error message as an alert after a delay of 500 milliseconds (adjust as needed)
+            setTimeout(function() {
+                alert(errorMessage);
+            }, 500);
+        } else {
+            // If no error, show a success message after a delay of 500 milliseconds (adjust as needed)
+            setTimeout(function() {
+                alert('Login successful!');
+            }, 500);
+        }
+    }
+
+    // Call the function when the page finishes loading
+    window.onload = showAlert;
+</script>
+
+  <script src="<script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> ></script>"></script>
+    <script src="home.js" ></script>
+
+</body>
+</html>

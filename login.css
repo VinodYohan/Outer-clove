@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+body {
+    font-family: Goudy Old Style, sans-serif;
+    background: url("02.jpg");
+    margin: 0;
+    padding: 0;
+    color:gold ;
+    background-color: #f2f2f2;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+
+
+.content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.31);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color:black;
+    color:gold;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.footer-content p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: gold;
+}
+
+.footer-content p:last-child {
+    margin-top: 15px;
+    font-size: 12px;
+    color:gold ;
+}
+
+
+/*body{
+         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #010101;
+    animation: slide-in-top 0.3s both;
+}*/
+    
+
+.wrapper {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    display: flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+
+
+
+
+
+.wrapper .icon {
+position: relative;
+background: gold;
+border-radius: 50%;
+margin: 5px;
+width: 80px;
+height: 80px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 10px 10px rgba(184, 201, 145, 0.1);
+cursor: pointer;
+transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+border: 2px solid transparent;
+position: relative;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.wrapper .icon:active {
+animation: move-up 0.5s ease;
+}
+
+@keyframes move-up {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-20px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+@keyframes slide-in-top {
+0% {
+transform: translateY(50px);
+opacity: 0;
+}
+
+100% {
+transform: translateY(0px);
+opacity: 1;
+}
+}
+
+.wrapper .tooltip {
+position: absolute;
+top: 0;
+font-size: 14px;
+background: #fff;
+color: #fff;
+padding: 5px 8px;
+border-radius: 5px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+opacity: 0;
+pointer-events: none;
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.wrapper .icon:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: 2px solid transparent;
+border-radius: 50%;
+animation: pulse-border 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse-border {
+0% {
+transform: scale(0.8);
+opacity: 1;
+}
+50% {
+opacity: 0.6;
+}
+100% {
+transform: scale(1.2);
+opacity: 0;
+}
+}
+
+.wrapper .icon:hover .tooltip {
+top: -45px;
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+text-shadow: 0px -1px 0px rgba(157, 64, 64, 0.1);
+
+border-color: #ffffff; 
+
+}
+.wrapper .icon:hover .tooltip,
+.wrapper .icon:hover span {
+text-shadow: 0px -1px 0px rgba(157, 64, 64, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+background: #1877F2;
+color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+background: #1DA1F2;
+color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+background: #E4405F;
+color: #fff;
+}
+.socialSvg {
+width: 35px;
+}
+
+.socialSvg path {
+fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+animation: slide-in-top 0.3s both;
+}
+
+h2 {
+    text-align: center;
+}
